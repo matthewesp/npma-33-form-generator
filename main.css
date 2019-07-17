@@ -1,0 +1,65 @@
+.invisible {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+    margin: 0 !important;
+}
+.indent {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.title-h1 {
+    width: 100%;
+    background-color: #272727;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-left: -10px;
+    margin-top: -5px; 
+    padding: 25px 10px 10px 25px;
+    color: white;
+}
+.content {
+    margin: 20px;
+}
+form{
+    border: 2px solid #272727;
+    border-radius: 25px;
+    padding: 0px 25px 10px 10px;
+}
+
+.container {
+    margin: 5vh 15% 5vh 15%;
+}
+
+#save {
+    margin-top: 25px;
+    width: 100px;
+    height: 40px;
+    background-color: #272727;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    border:none;
+}
+
+label {
+    width: 250px;
+    height: auto;
+    display: inline-block;
+}
+
+.leftToCheck {
+        width: 200px;
+        height: auto;
+        display: inline-block;
+}
+
+input[type = text] {
+            width: 250px;
+            height: auto;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 15px;
+            display: inline-block;
+            border: solid 1px grey;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NPMA 33</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="container">
+    <form id="form">
+        <h1 class="title-h1">NPMA 33 Form Test by M.E. </h1>
+        <div class="content">
+            <h2>Company Info</h2>
+                <label>Company Name: </label><input id="cName" type="text" placeholder="Company Name" value="" required><br>
+                <label>Company Address: </label><input id="cAddress" type="text" placeholder="Company Address" value="" required><br>
+                <label>Company Phone Number: </label><input id="cPhone" type="text" placeholder="Company Phone" value="" required><br>
+                <label>Company Business License Number: </label><input id="cBizNum" type="text" placeholder="Company Business Number" value="" required><br>
+                <h3> Inspector's Information </h3>
+                    <label>Inspector's Name: </label><input id="iName" type="text" placeholder="Inspector Name" value="" required><br>
+                    <label>License Number: </label><input id="iNum" type="text" placeholder="License Number" value="" required><br>
+            <h2>General Information</h2>
+                <label>Inpected Property Address: </label><input id="address" type="text" placeholder="Address of Property Inspected" value="" required><br>
+                <label>Structures Inspected: </label><input id="structures" type="text" placeholder="Structures Inspected" value="" required>
+            <h2>Inspection Findings</h2>
+                <input type="radio" id="notVisible" name="active"> Not Visible </input>
+                <input type="radio" id="visible" name="active"> Visible </input>
+                <div class="invisible indent" id="isChecked">
+                    <input type="checkbox" id="liveInsectsChecked" name="activeChecked" value="false"> Live Insects </input><input id="liveInsects" type="text" placeholder="Provide Details" value=""><br> 
+                    <input type="checkbox" id="deadInsectsChecked" name="activeChecked" value="false"> Dead Insects </input><input id="deadInsects" type="text" placeholder="Provide Details" value=""><br> 
+                    <input type="checkbox" id="vDamagedChecked" name="activeChecked" value="false"> Visible Damage </input><input id="vDamage" type="text" placeholder="Provide Details" value=""><br> 
+                    <div id="pTreatment" class="invisible indent">
+                        Is there visual evidence of a possible previous treatment?</br>
+                        <input type="radio" id="pTreatChecked" name="treated" value=""> Yes </input><br>
+                        <input type="radio" name="treated" value=""> No <br>
+                        <label>Explain Why: </label><input id="pTreat" type="text" placeholder="Provide Details" value=""><br>
+                    </div>
+                </div>
+            <br>
+            <h2>Recommendations</h2>
+                <h3>Is a Treatment Needed?</h3>
+                <input type="radio" id="treatment" name="treatActive"> Yes </input>
+                <input type="radio" id="noTreatment" name="treatActive"> No </input><br />
+                <label>Please Explain Why: </label><input id="treatmentDetails" type="text" placeholder="Treat Details" value="" required><br />
+            <h2>Obstructions</h2>
+                <h3>Were any of these areas inaccessable?</h3>
+                <input type="checkbox" id="basementChecked" name="noAccess" value="false">Basement </input><input class="invisible" id="basement" type="text" placeholder="Provide Details" value=""><br>
+                <input type="checkbox" id="crawlSpaceChecked" name="noAccess" value="false">Crawl Space </input><input class="invisible"  id="crawlSpace" type="text" placeholder="Provide Details" value=""><br>
+                <input type="checkbox" id="mainChecked" name="noAccess" value="false">Main Level </input><input class="invisible"  id="main" type="text" placeholder="Provide Details" value=""><br>
+                <input type="checkbox" id="atticChecked" name="noAccess" value="false">Attic </input><input class="invisible" id="attic" type="text" placeholder="Provide Details" value=""><br>
+                <input type="checkbox" id="garageChecked" name="noAccess" value="false">Garage </input><input class="invisible"  id="garage" type="text" placeholder="Provide Details" value=""><br>
+                <input type="checkbox" id="exteriorChecked" name="noAccess" value="false">Exterior </input><input class="invisible"  id="exterior" type="text" placeholder="Provide Details" value=""><br>
+                <input type="checkbox" id="porchChecked" name="noAccess" value="false">Porch </input><input class="invisible"  id="porch" type="text" placeholder="Provide Details" value=""><br>
+                <input type="checkbox" id="additionChecked" name="noAccess" value="false">Addition </input><input class="invisible"  id="addition" type="text" placeholder="Provide Details" value=""><br>
+                <input type="checkbox" id="otherChecked" name="noAccess" value="false">Other </input><input class="invisible"  id="other" type="text" placeholder="Provide Details" value=""><br>
+            <br />
+            <h2>Additonal Comments?</h2>
+            <input id="addComments" type="text" placeholder="Addition Comments" value="">
+            <br />
+            <button id="save">Submit</button>
+        </div>
+    </form>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+    integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous">
+</script>
+<script src="imgKey.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
